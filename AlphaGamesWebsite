@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlphaGames</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #003300; /* Dunkelgrün */
+      color: #ffffff;
+    }
+    header {
+      background-color: #004d00;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    footer {
+      background-color: #002200;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #00ff00;
+    }
+    button.download {
+      background-color: #00cc00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button.download:hover {
+      background-color: #00e600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">AlphaGames</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#spiel">Spiel</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Willkommen bei AlphaGames!</h1>
+      <p>Wir entwickeln spannende und kreative Spiele für alle Gamer da draußen. Tauche in unsere Welt ein!</p>
+    </section>
+
+    <section id="spiel">
+      <h2>Unser aktuelles Projekt</h2>
+      <p><strong>Endless Runner</strong> - Laufe, springe und überlebe so lange du kannst!</p>
+      <button class="download">Demnächst verfügbar</button>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>Fragen oder Feedback? Schreibe uns an: <a href="mailto:kontakt@alphagames.com" style="color:#00ff00;">kontakt@alphagames.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 AlphaGames. Alle Rechte vorbehalten.
+  </footer>
+</body>
+</html>
