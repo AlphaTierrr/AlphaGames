@@ -102,6 +102,11 @@ section {
     section {
         padding: 20px;
     }
+
+    /* Lichteffekt auf mobilen Geräten entfernen */
+    #neon-light {
+        display: none;  /* Entfernt den Lichteffekt */
+    }
 }
 
 /* Für Bildschirme mit einer maximalen Breite von 480px (Smartphones im Hochformat) */
@@ -126,3 +131,4 @@ section {
         padding: 15px;
     }
 }
+
