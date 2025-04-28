@@ -5,7 +5,7 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;  /* Ermöglicht das Scrollen */
     cursor: none;  /* Entfernt den Mauszeiger */
 }
 
@@ -20,6 +20,7 @@ body {
     pointer-events: none; /* Verhindert, dass der Effekt mit anderen Elementen interagiert */
     transform: translate(-50%, -50%);
     transition: all 0.1s ease-out;
+    z-index: 1; /* Sicherstellen, dass der Effekt hinter dem Inhalt bleibt */
 }
 
 /* Allgemeine Layouts für den Header */
