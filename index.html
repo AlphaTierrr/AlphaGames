@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaGames</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Lichteffekt -->
+    <div id="neon-light"></div>
+
+    <!-- Rest des Inhalts -->
+    <header>
+        <div class="container">
+            <h1>AlphaGames</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Startseite</a></li>
+                    <li><a href="#games">Spiele</a></li>
+                    <li><a href="#apks">APKs</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Willkommen bei AlphaGames</h2>
+            <p>Entdecke die neuesten Spiele und lade deine Lieblings-APK herunter!</p>
+        </section>
+        <section id="games">
+            <h2>Unsere Spiele</h2>
+            <p>Schau dir unsere neuesten und spannendsten Spiele an.</p>
+        </section>
+        <section id="apks">
+            <h2>APK Downloads</h2>
+            <p>Hier kannst du unsere Android- und iOS-APKs herunterladen.</p>
+        </section>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Für Anfragen, Feedback oder Support, kontaktiere uns!</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AlphaGames - Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript direkt hier eingebaut -->
+    <script>
+        // Hole das neon light div
+        const neonLight = document.getElementById('neon-light');
+
+        // Event Listener für Mausbewegungen
+        document.addEventListener('mousemove', function (event) {
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+
+            // Positioniere das neon light bei der Maus
+            neonLight.style.left = `${mouseX}px`;
+            neonLight.style.top = `${mouseY}px`;
+        });
+    </script>
+</body>
+</html>

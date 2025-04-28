@@ -1,0 +1,78 @@
+﻿/* Allgemeines Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #001f00;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: none; /* Entfernt den Mauszeiger */
+}
+
+/* Lichteffekt */
+#neon-light {
+    position: absolute;
+    width: 40px; /* Kleinere Größe für das Licht */
+    height: 40px; /* Kleinere Größe für das Licht */
+    border-radius: 50%;
+    background: rgba(0, 255, 0, 0.6);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.6), 0 0 40px rgba(0, 255, 0, 0.4);
+    pointer-events: none; /* Verhindert, dass der Effekt mit anderen Elementen interagiert */
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease-out;
+}
+
+/* Allgemeine Layouts für den Header */
+header {
+    background-color: #006400;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+    nav a:hover {
+        color: #a2d8a2;
+    }
+
+/* Main Content Styling */
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #a2d8a2;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #006400;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Abschnitte Styling */
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
