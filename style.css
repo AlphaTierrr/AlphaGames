@@ -1,4 +1,4 @@
-﻿/* Allgemeines Styling */
+/* Allgemeines Styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #001f00;
@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    cursor: none; /* Entfernt den Mauszeiger */
+    cursor: none;  /* Entfernt den Mauszeiger */
 }
 
 /* Lichteffekt */
@@ -49,9 +49,9 @@ nav a {
     transition: color 0.3s ease;
 }
 
-    nav a:hover {
-        color: #a2d8a2;
-    }
+nav a:hover {
+    color: #a2d8a2;
+}
 
 /* Main Content Styling */
 main {
@@ -75,4 +75,53 @@ footer {
 section {
     margin-bottom: 40px;
     text-align: center;
+}
+
+/* Responsive Design (Mobile-first) */
+
+/* Für Bildschirme mit einer maximalen Breite von 768px (Tablets und Smartphones) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.5em;  /* Kleinere Schriftgröße */
+    }
+
+    nav ul {
+        flex-direction: column;  /* Vertikale Navigation */
+        gap: 10px;
+    }
+
+    h2 {
+        font-size: 1.8em;  /* Kleinere Schriftgröße */
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+/* Für Bildschirme mit einer maximalen Breite von 480px (Smartphones im Hochformat) */
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;  /* Noch kleinere Schriftgröße */
+    }
+
+    nav a {
+        font-size: 1.2em;  /* Kleinere Links */
+    }
+
+    h2 {
+        font-size: 1.5em;  /* Noch kleinere Überschrift */
+    }
+
+    footer {
+        padding: 15px;
+    }
 }
