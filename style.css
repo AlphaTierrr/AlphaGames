@@ -138,7 +138,7 @@ section {
 
     /* Lichteffekt auf mobilen Geräten entfernen */
     #neon-light {
-        display: none;
+        display: none !important;  /* Stellt sicher, dass der Lichteffekt entfernt wird */
     }
 }
 
@@ -163,5 +163,10 @@ section {
 
     footer {
         padding: 15px;
+    }
+
+    /* Lichteffekt auf kleinen Geräten entfernen */
+    #neon-light {
+        display: none !important;  /* Stellt sicher, dass der Lichteffekt entfernt wird */
     }
 }
